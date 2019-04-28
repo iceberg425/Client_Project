@@ -16,7 +16,7 @@ Twitter is a widely used social-media platform that allows its users to publicly
 - [03. Weather/Outage Data Cleaning, Preprocessing, and EDA]()
 - [04. Modeling]()
 
-### Data Collection
+### 1. Data Collection
 
 #### Twitter Data
 We collected tweets using [TweetScraper](https://github.com/jonbakerfish/TweetScraper), but it should be noted that we only arrived at this solution after spending about a week trying other techniques without successfully compiling a usable collection of historical tweets.
@@ -26,11 +26,7 @@ Here is a brief summary of the issues we had:
 - *While using the [TwitterScraper](https://github.com/taspinar/twitterscraper) package, we quickly exceeded the maximum number of API requests allowed and were prevented from pulling additional tweets.*
 - *Before out access was blocked, TwitterScraper appeared to return 400 tweets per request, but, once we set the tweets in a pandas dataframe, we discovered that each request pulled only 20 unique tweets (repeated 20 times).*
 
-We ran TweetScraper in the terminal, using the query "power outage conedison". 
-
-![](./images/tweetscaper_terminal.png)
-
-This returned 4,375 tweets ranging from 2007-07-20 to the time of the scrape. TweetScraper returned each tweet as an individual JSON file, saved to the folder *"../TweetScraper/Data/tweet"*. We copied this folder to the present directory, and used the following code to extract the tweets and add them to a Pandas Dataframe.
+We ran TweetScraper using the query "power outage conedison". The inclusion of 'conedison' implicitly narrowed the results of our scrape to the New York City area, which proved important since the data did not specify geographical locations of the tweets.
 
 #### Weather Data
 Weather data was gathered from Kaggle's [Historic Hourly Weather](https://www.kaggle.com/selfishgene/historical-hourly-weather-data#weather_description.csv) dataset, which includes hourly weather data for New York City from 10/1/2012 to 10/27/2017.
