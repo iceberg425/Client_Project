@@ -14,7 +14,8 @@ Twitter is a widely used social-media platform that allows its users to publicly
 - [01. Data Collection](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/01_Data_Gathering.ipynb)
 - [02.1 Twitter Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.1_Data_Cleaning_Tweets.ipynb)
 - [02.2 Weather/Outage Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.2_Data_Cleaning_Weather_and_Outage.ipynb)
-- [03. Modeling]()
+- [03. Merging Dataframes]()
+- [04. Modeling]()
 
 ### 1. Data Collection
 
