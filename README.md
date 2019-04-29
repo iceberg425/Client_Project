@@ -49,5 +49,17 @@ We find that the results are sensitive to class weights. We also find that the t
 
 
 ## Conclusions and Next Steps
+Weather was confirmed as being strongly correlated to power outages. Initial research predicted high outage occurences during summer and winter storms. Current work showed higher occurences of power outages during summer storms only. However, findings are limited to small size of confirmed outage data.
+
+Further work with Twitter data also required. While tweets containing reports of power outages in New York City were collected, quality and size of this data can be improved with more resources and/or less restrictions from Twitter's API.
+
+Next steps to extend current work and conclude in final product that will improve response time to power outages:
+
+Logistic Regression and Support Vector Classifier models were used to classify tweets as those reporting power outages and tweets that do not contain report of power outages. Other models could be employed to better handle large number of features and imbalanced classes.
+The inclusion of weather data as predictors in classification model could result in better model performance. It is known from research and current procedures of utility companies, that there is a strong correlation between weather and power outages.
+Mapping of power outages to locations, in a clear map application that will visually allow for identification of areas where there are power outages. The extent of power outages would be visible via map application.
+Recall was the guiding metric for model performance. More focus can be given to other classification metrics to improve overall model performance.
+Testing of model with streaming tweets, with no fiter of stream. All tweets would be captured and power outages would be identified from these. This would allow for evaluation of model on unseen data.
+Application of model that classifies reports of power outages from social media (Twitter) in real time.
 
 
