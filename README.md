@@ -14,7 +14,7 @@ Twitter is a widely used social-media platform that allows its users to publicly
 - [01. Data Collection](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/01_Data_Gathering.ipynb)
 - [02.1 Twitter Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.1_Data_Cleaning_Tweets.ipynb)
 - [02.2 Weather/Outage Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.2_Data_Cleaning_Weather_and_Outage.ipynb)
-- [03. Merging Dataframes]()
+- [03. Merging Dataframes](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/03_Merge_Weather_and_Tweets.ipynb)
 - [04. Modeling]()
 
 ### 1. Data Collection
@@ -35,10 +35,13 @@ Weather data was gathered from Kaggle's [Historic Hourly Weather](https://www.ka
 #### Outage Data
 Power outage data was gathered from NYC Open Data's [OEM Emergency Notification](https://data.cityofnewyork.us/Public-Safety/OEM-Emergency-Notifications/8vv7-7wx3/data) database, which includes data on official NYC Office of Emergency Management notifications dating back to 2009. Power outage notifications contained the term 'Power Outage' in the *Notification Title* column.
 
-### 2. Twitter Data Cleaning, Preprocessing, and EDA
+### 2.1 Twitter Data Cleaning, Preprocessing, and EDA
 Cleaning, preprocessing, and EDA of the Twitter data are described in detail in [this notebook](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.1_Data_Cleaning_Tweets.ipynb). Natural language processing was used to explore the vocabulary in the tweets, in order to identify language that could improve model accuracy.
 
-### 3. Weather and Outage Data Cleaning, Preprocessing, and EDA
+### 2.2 Weather and Outage Data Cleaning, Preprocessing, and EDA
+
+### 3. Merging Dataframes
+The two dataframes were merged before modeling.
 
 ### 4. Modeling
 
