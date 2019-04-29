@@ -44,6 +44,8 @@ Cleaning, preprocessing, and EDA of the Twitter data are described in detail in 
 The two dataframes were merged before modeling.
 
 ### 4. Modeling
+We employ a Logistic Regression (lr) and a Support Vector Classifier (SVC) to tackle the problem. We tackle the imbalanced class problem using class weights. Although not reported here, we find that the results are sensitive to class weights. We also find that the trade-off between the recall and precision appears to be more pronounced for the SVC than the lr.  
+
 
 ## Conclusions and Next Steps
 
