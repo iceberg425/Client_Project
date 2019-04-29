@@ -15,7 +15,7 @@ Twitter is a widely used social-media platform that allows its users to publicly
 - [02.1 Twitter Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.1_Data_Cleaning_Tweets.ipynb)
 - [02.2 Weather/Outage Data Cleaning, Preprocessing, and EDA](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/02.2_Data_Cleaning_Weather_and_Outage.ipynb)
 - [03. Merging Dataframes](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/03_Merge_Weather_and_Tweets.ipynb)
-- [04. Modeling]()
+- [04. Modeling](https://git.generalassemb.ly/iceberg/DSI-Client-Project/blob/master/Modeling.ipynb)
 
 ### 1. Data Collection
 
@@ -44,7 +44,8 @@ Cleaning, preprocessing, and EDA of the Twitter data are described in detail in 
 The two dataframes were merged before modeling.
 
 ### 4. Modeling
-We employ a Logistic Regression (lr) and a Support Vector Classifier (SVC) to tackle the problem. We tackle the imbalanced class problem using class weights. Although not reported here, we find that the results are sensitive to class weights. We also find that the trade-off between the recall and precision appears to be more pronounced for the SVC than the lr.  
+We employ a Logistic Regression (lr) and a Support Vector Classifier (SVC) to tackle the problem. Given the nature of the problem, we were confronted with an imbalanced class problem. This problem was addressed using class weights. 
+We find that the results are sensitive to class weights. We also find that the trade-off between the recall and precision appears to be more pronounced for the SVC than the lr.  
 
 
 ## Conclusions and Next Steps
